@@ -4,9 +4,7 @@ import TableContainer from "./components/TableContainer";
 function App() {
     return (
         <div>
-            <TableContainer>
-
-            </TableContainer>
+            <TableContainer/>
         </div>
     );
 };
