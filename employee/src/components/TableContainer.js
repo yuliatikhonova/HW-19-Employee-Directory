@@ -1,21 +1,31 @@
 import React from "react";
 import Jumbotron from "./Jumbotron";
-import SearchBar from "./SearchBar";
-import Header from "./Header";
 import Data from "./Data";
-import API from "../utils/API";
+import getInfo from "../utils/API";
 
 class TableContainer extends React.Component {
   state = {
-    
+    employees: [],
+    employeeInfo: []
   };
 
-  
+  componentDidMount() {
+    this.getEmployees();
+  }
+
+  getEmployees = () => [
+    
+  ]
 
   render() {
     return (
-      <Jumbotron/>
-      
+      <div>
+        <Jumbotron />
+        <section className="table">
+          <Data/>
+        </section>
+      </div>
+
     );
   }
 }
