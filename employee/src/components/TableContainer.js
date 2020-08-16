@@ -80,11 +80,10 @@ class TableContainer extends React.Component {
     return (
       <div>
         <Jumbotron />
-        <section className="table">
+        <section className="container">
           <MDBDataTable
-            striped
-            bordered
-            small
+            entries={20}
+            hover
             data={data}
           />
         </section>
