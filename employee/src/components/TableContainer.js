@@ -14,12 +14,40 @@ class TableContainer extends React.Component {
   }
 
   getEmployees = () => [
+    getInfo()
+      .then(response => response.data.results)
+      .then(data => { this.setState({ employees: data }) })
+      .then(async () => { this.setState({ employeeInfo: this.buildData(), isLoading: false }) })
+      .catch((err) => { console.log(err); })
+  ];
 
-  ]
+  buildData = () => {
+    let employees = this.state.employees.map((employee) => {
+      return (
+        {
+          employeePicture: <img
+            src={employee.picture.medium}
+            alt='employee'
+          />,
+          first: employee.name.first,
+          last: employee.name.last,
+          email: employee.email,
+          phone: employee.phone,
+          city: employee.location.city
+        }
+      )
+    });
+    return employees;
+  }
 
   render() {
     const data = {
       columns: [
+        {
+          label: 'Employee Picture',
+          field: 'employeePicture',
+          width: 200
+        },
         {
           label: 'First Name',
           field: 'first',
@@ -43,11 +71,6 @@ class TableContainer extends React.Component {
         {
           label: 'City',
           field: 'city',
-          width: 100
-        },
-        {
-          label: 'Age',
-          field: 'age',
           width: 100
         }
       ],
