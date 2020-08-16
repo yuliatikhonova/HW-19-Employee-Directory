@@ -1,53 +1,64 @@
-# Unit 19 React Homework: Employee Directory
+# Workout Tracker
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/yuliatikhonova/HW-19-Employee-Directory)
+[![GitHub contributors](https://img.shields.io/github/contributors/yuliatikhonova/HW-9-README-Generator.svg)](https://github.com/yuliatikhonova/HW-18-Budget-Trackers)
 
-## Overview
+## Description
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+  As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information. It would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-## User Story
+    https://yuliatikhonova.github.io/HW-19-Employee-Directory/
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+## Table of Contents
 
-## Business Context
+  * [Installation](#installation)
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+  * [Packages Used](#usage) 
 
-## Acceptance Criteria
+  * [License](#license)
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+  * [Contributing](#contributing)
 
-The user should be able to:
+  * [Tests](#tests)
 
-  * Sort the table by at least one category
+  * [Questions](#questions)
 
-  * Filter the users by at least one property.
+  * [Demo](#GIF)
 
-## Commit Early and Often
+## Installation
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+  To install necessary dependencies, run the following command:
+  
+  * npm i
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Packages Used 
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+  * axios
+  * gh-pages
+  * mdbreact
+  * react
+  * react-dom
+  * react-scripts
+  * save-dev
 
-Follow these guidelines for committing:
+## License
+  Licenses used in this project:
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+  * MIT 
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## Contributing
+  
+  * There was only one contributor in this project 
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+## Tests
+  To run tests, run the following command:
+  
+  * npm run test 
+  
 
-* Test your application before you commit to ensure functionality at every step in the development process
+## Questions
+  If you have any questions or issues, please contact [Yulia Tikhonova](undefined) directly at yuliatikhonova@outlook.com. 
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+## Demo
+  Here is the demo of the project:
 
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
-
+ ![Demo](https://user-images.githubusercontent.com/62128411/90328654-048f4800-df53-11ea-8e64-07e1a53276b7.gif)
